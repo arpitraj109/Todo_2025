@@ -1,0 +1,172 @@
+/* Reset and base */
+body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #f8fbff, #e8f0ff);
+  color: #333;
+  min-height: 100vh;
+}
+
+/* Container */
+.container {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+/* Title */
+.title {
+  text-align: center;
+  font-size: 2.25rem;
+  margin-bottom: 16px;
+  color: #222;
+}
+
+/* Date display */
+.date-display {
+  text-align: center;
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* Input group */
+.input-group {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 12px 14px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #007bff;
+}
+
+.input-group button {
+  padding: 12px 20px;
+  background-color: #007bff;
+  font-weight: 500;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.input-group button:hover {
+  background-color: #0056b3;
+}
+
+/* Task list */
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Task item */
+.task-item {
+  background: #f9f9fb;
+  border: 1px solid #e0e0e0;
+  padding: 14px 16px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: background 0.2s ease;
+}
+
+.task-item:hover {
+  background-color: #f0f4ff;
+}
+
+.task-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.task-main span {
+  flex: 1;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Timestamp */
+.task-timestamp {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+/* Editable input */
+.task-item input[type="text"] {
+  flex: 1;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+/* Buttons */
+.actions button {
+  margin-left: 6px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.actions .edit {
+  background-color: #ffc107;
+  color: white;
+}
+
+.actions .edit:hover {
+  background-color: #e0a800;
+}
+
+.actions .save {
+  background-color: #28a745;
+  color: white;
+}
+
+.actions .save:hover {
+  background-color: #218838;
+}
+
+.actions .delete {
+  background-color: #dc3545;
+  color: white;
+}
+
+.actions .delete:hover {
+  background-color: #c82333;
+}
+
+/* Empty state */
+.empty {
+  text-align: center;
+  color: #999;
+  font-style: italic;
+  padding: 20px 0;
+}
